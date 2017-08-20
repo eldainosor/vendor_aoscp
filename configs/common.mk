@@ -16,7 +16,7 @@ endif
 
 #We build unofficial by default
 ifndef AOSCP_BUILDTYPE
-    AOSCP_BUILDTYPE := unofficial
+    AOSCP_BUILDTYPE := shishult
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -194,3 +194,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 -include vendor/overlay/aoscp/configs/common.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
+
+BUILD_TRUSHISHU := true
+include vendor/shishu/common.mk
